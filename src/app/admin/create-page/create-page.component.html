@@ -1,0 +1,65 @@
+<form [formGroup]="form" (ngSubmit)="submit()">
+    <h1>Создание нового номера</h1>
+
+    <div
+            class="form-control"
+            [ngClass]="{invalid: form.get('title').touched && form.get('title').invalid}"
+    >
+        <label for="title">Название номера:</label>
+        <input id="title" type="text" formControlName="title">
+        <div
+                *ngIf="form.get('title').touched && form.get('title').invalid"
+                class="validation"
+        >
+            <small *ngIf="form.get('title').errors.required">
+                Введите название номера Вашего отеля
+            </small>
+        </div>
+    </div>
+
+    <div class="create-image form-control">
+
+        <label>фотография:</label>
+
+        <quill-editor formControlName="photo" placeholder="Выберите фотографию">
+
+            <div quill-editor-toolbar>
+
+                <button class="ql-image">Выбрать:</button>
+
+            </div>
+
+        </quill-editor>
+
+    </div>
+
+
+    <div class="form-control">
+
+        <label>Описание номера:</label>
+        <quill-editor formControlName="text" placeholder="Описание номера"></quill-editor>
+
+    </div>
+
+    <div
+            class="form-control"
+            [ngClass]="{invalid: form.get('price').touched && form.get('price').invalid}"
+    >
+        <label for="price">Цена за номер:</label>
+        <input id="price" type="text" formControlName="price">
+        <div
+                *ngIf="form.get('price').touched && form.get('price').invalid"
+                class="validation"
+        >
+            <small *ngIf="form.get('price').errors.required">
+                Введите цену за номер
+            </small>
+        </div>
+    </div>
+
+    <button
+            type="submit"
+            class="btn btn-block btn-dark"
+            [disabled]="form.invalid"
+    >Создать</button>
+</form>

@@ -1,0 +1,44 @@
+<div class="body-reserve">
+
+<div *ngIf="reserveRooms.length > 0; else empty">
+
+    <div class="container">
+
+        <div class="roomtitle">
+            <!--<div *ngFor="let reserveRoom of reserveRooms; let i = index">-->
+
+                <table>
+                    <tbody>
+                    <tr *ngFor="let reserveRoom of reserveRooms; let i = index">
+                        <td>{{ reserveRoom.title }}</td>
+                        <td>{{ reserveRoom.price }} $</td>
+                        <td>
+                            <button
+                                    class="btn btn-danger"
+                                    (click)="delete(reserveRoom)"
+                            >Delete</button>
+                        </td>
+                        <!--<td>{{ cartProduct.price }} $</td>-->
+                    </tr>
+                    </tbody>
+                </table>
+                <hr>
+
+            <div class="totalprice">
+                <b>Итого: {{totalPrice}} $</b>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<ng-template #empty>
+
+    <h2>Нет ни одного забронированого номера!</h2>
+
+</ng-template>
+
+</div>

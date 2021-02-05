@@ -1,0 +1,29 @@
+#Header_wrapper {
+  background-image: url(../../assets/about/about-header.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  min-height: 420px;
+}
+
+#Content .sections_group, #Content .section_wrapper .clearfix .page-pager {
+  background-color: #463229;
+}
+#Content .mcb-section-inner {
+  padding-top: 50px;
+}
+
+#Content .mcb-section {
+  background-color: #f6f4f1;
+}
+
+#submit {
+
+  &:disabled {
+    cursor: not-allowed;
+    background: var(--light-color);
+    color: #111;
+  }
+}

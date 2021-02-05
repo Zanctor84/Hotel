@@ -1,0 +1,13 @@
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.btn:disabled {
+    cursor: not-allowed;
+    background: var(--light-color);
+    color: #111;
+}
+h1 {
+  color: #00a2b9;
+}

@@ -1,0 +1,209 @@
+<header class="jumbotron bg-inverse text-center center-vertically" role="banner">
+  <div class="container">
+    <div class="maintext">
+      <h1>Your dreams come true in hotel</h1>
+      <div class="mainsloganh2">
+        <h2>MR<span class="star-hotel">I</span>YA 5<span class="star-hotel">*</span> </h2>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!--<img src="../../assets/home/hotel5-slider-bg.jpg" class="rev-slidebg" data-no-retina>-->
+
+<div class="section mcb-section mcb-section-50130e1uy" style="padding-top:120px;padding-bottom:80px">
+  <div class="section_wrapper mcb-section-inner">
+    <div class="wrap mcb-wrap mcb-wrap-jvmck0ovb one valign-top clearfix" style="padding:0 2% 0 0">
+      <div class="mcb-wrap-inner">
+        <div class="column mcb-column mcb-item-hjcgsxw1t one-second column_image">
+          <div class="image_frame image_item scale-with-grid no_border">
+            <div class="image_wrapper">
+              <a [routerLink]="['/about']">
+                <div class="mask"></div><img class="scale-with-grid" src="../../assets/home/hotel5-home-pic1.jpg"></a>
+              <div class="image_links">
+                <a [routerLink]="['/about']" class="link"><i class="icon-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column mcb-column mcb-item-uue8wjrdu one-second column_column column-margin-20px">
+          <div class="column_attr clearfix" style="padding:0 0 0 10%;">
+            <h2>Welcome to the HOTEL MR<span class="star-hotel">I</span>YA 5<span class="star-hotel">*</span></h2>
+            <hr class="no_line" style="margin:0 auto 15px">
+            <h6>Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus tortor justo.</h6>
+            <p>
+              Maecenas ultrices tellus sit amet sem placerat tempor. Maecenas eget arcu venenatis, sagittis felis. Maecenas mi tortor, pellentesque a aliquam.
+            </p>
+            <hr class="no_line" style="margin:0 auto 15px">
+            <ul class="list_custom">
+              <li>
+                Mauris rhoncus orci in imperdiet
+              </li>
+              <li>
+                Cras massa nibh, tincidunt ut eros
+              </li>
+            </ul>
+            <hr class="no_line" style="margin:0 auto 15px">
+            <a class="button button_size_2 button_theme button_js" [routerLink]="['/about']"><span class="button_label">READ MORE</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="rooms-home" style="padding:40px 0">
+  <div class="container rooms-home">
+  <div class="mcb-wrap-inner">
+    <div class="column mcb-column mcb-item-3bu4xi0k5 one-second column_column">
+      <div class="column_attr clearfix">
+        <h2 style="color: #e5d4bd;">We offer various types of rooms</h2>
+      </div>
+    </div>
+    <div class="column mcb-column mcb-item-v5gtl8a3b one-second column_column">
+      <div class="column_attr clearfix" style="padding:15px 0 0 10%;">
+        <p style="color: #fff;">
+          Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna.
+        </p>
+      </div>
+    </div>
+    <div class="column mcb-column mcb-item-a59foffi6 one column_divider">
+      <hr class="no_line" style="margin:0 auto 60px">
+    </div>
+  </div>
+  </div>
+
+
+<div
+*ngIf="posts$ | async as posts; else loading"
+class="posts"
+>
+
+  <app-room
+          *ngFor="let post of posts | slice:0:3"
+          [post]="post"
+  ></app-room>
+
+  <div class="btn-main-room">
+    <button
+       [routerLink]="['/rooms']"
+       class="btn btn-primary"
+    >Смотреть все</button>
+  </div>
+
+</div>
+
+  <ng-template #loading>
+
+    <div id="preloader">
+      <div id="loader"></div>
+      <p>Загрузка...</p>
+    </div>
+
+
+  </ng-template>
+
+
+
+</section>
+
+<section id="service">
+
+  <div class="section mcb-section mcb-section-w7ulzloj2" style="padding-top:110px;padding-bottom:70px">
+    <div class="section_wrapper mcb-section-inner">
+      <div class="wrap mcb-wrap mcb-wrap-hw9038igh one valign-top clearfix">
+        <div class="mcb-wrap-inner">
+          <div class="column mcb-column mcb-item-kx5jt9rve one column_column">
+            <div class="column_attr clearfix align_center">
+              <h2>Our
+                <br> services
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrap mcb-wrap mcb-wrap-ydv01syhu one-fourth valign-top clearfix" style="padding:0 2%">
+        <div class="mcb-wrap-inner">
+          <div class="column mcb-column mcb-item-9lanr08z0 one column_image">
+            <div class="image_frame image_item no_link scale-with-grid aligncenter no_border">
+              <div class="image_wrapper"><img class="scale-with-grid" src="../../assets/service/icon1.png">
+              </div>
+            </div>
+          </div>
+          <div class="column mcb-column mcb-item-5wogs2u14 one column_column">
+            <div class="column_attr clearfix align_center">
+              <h3 class="themecolor">Curabitur sed iaculis dolor</h3>
+              <p>
+                Maecenas imperdiet ante eget hendrerit posuere. Nunc urna libero.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrap mcb-wrap mcb-wrap-a3in65xjl one-fourth valign-top clearfix" style="padding:0 2%">
+        <div class="mcb-wrap-inner">
+          <div class="column mcb-column mcb-item-yrfsgl41k one column_image">
+            <div class="image_frame image_item no_link scale-with-grid aligncenter no_border">
+              <div class="image_wrapper"><img class="scale-with-grid" src="../../assets/service/icon2.png">
+              </div>
+            </div>
+          </div>
+          <div class="column mcb-column mcb-item-ptuszt4sz one column_column">
+            <div class="column_attr clearfix align_center">
+              <h3 class="themecolor">Aliquam erat ac ipsum</h3>
+              <p>
+                Maecenas imperdiet ante eget hendrerit posuere. Nunc urna libero.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrap mcb-wrap mcb-wrap-pjjjj9020 one-fourth valign-top clearfix" style="padding:0 2%">
+        <div class="mcb-wrap-inner">
+          <div class="column mcb-column mcb-item-gfc9oy6bv one column_image">
+            <div class="image_frame image_item no_link scale-with-grid aligncenter no_border">
+              <div class="image_wrapper"><img class="scale-with-grid" src="../../assets/service/icon3.png">
+              </div>
+            </div>
+          </div>
+          <div class="column mcb-column mcb-item-tb62o1du5 one column_column">
+            <div class="column_attr clearfix align_center">
+              <h3 class="themecolor">Quisque lorem tortor sed</h3>
+              <p>
+                Maecenas imperdiet ante eget hendrerit posuere. Nunc urna libero.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrap mcb-wrap mcb-wrap-mp76gz86j one-fourth valign-top clearfix" style="padding:0 2%">
+        <div class="mcb-wrap-inner">
+          <div class="column mcb-column mcb-item-av83rwth5 one column_image">
+            <div class="image_frame image_item no_link scale-with-grid aligncenter no_border">
+              <div class="image_wrapper"><img class="scale-with-grid" src="../../assets/service/icon4.png">
+              </div>
+            </div>
+          </div>
+          <div class="column mcb-column mcb-item-fkyi7i2zx one column_column">
+            <div class="column_attr clearfix align_center">
+              <h3 class="themecolor">Ut sagittis ipsum dolor eros</h3>
+              <p>
+                Maecenas imperdiet ante eget hendrerit posuere. Nunc urna libero.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrap mcb-wrap mcb-wrap-r7yhjm6bq one valign-top clearfix">
+        <div class="mcb-wrap-inner">
+          <div class="column mcb-column mcb-item-1azpbb0nm one column_button">
+            <div class="button_align align_center">
+              <a class="button button_size_2 button_theme button_js" [routerLink]="['/about']"><span class="button_label">SEE ALL SERVICES</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>

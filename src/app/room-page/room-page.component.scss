@@ -1,0 +1,40 @@
+#room-container {
+  display: flex;
+  justify-content: center;
+}
+.room {
+  padding-top: 50px;
+  width: 100%;
+  height: auto;
+}
+
+.room.ql-container.ngx-quill-view-html p {
+  max-height: 0;
+}
+
+h1 {
+  color: #1c1c1c;
+  text-align: center;
+}
+.field-room {
+  display: flex;
+  justify-content: space-between;
+}
+.room-price {
+  line-height: 32px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #00a2b9;
+}
+.room-price-info {
+  opacity: 0;
+  visibility: hidden;
+  transition: .55s opacity, .55s visibility;
+
+}
+.room-price:hover > .room-price-info{
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+

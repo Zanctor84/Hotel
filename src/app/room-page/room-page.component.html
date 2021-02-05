@@ -1,0 +1,49 @@
+<div id="room-container">
+<div *ngIf="post$ | async as post; else loading">
+
+    <div class="container">
+        <div class="row">
+            <div class="room">
+                <div class="header">
+                    <h1>{{post.title}}</h1>
+                </div>
+                <div class="room-foto">
+                     <quill-view-html [content]="post.photo"></quill-view-html>
+                </div>
+                <div class="content">
+                    <quill-view-html [content]="post.text"></quill-view-html>
+                </div>
+            </div>
+            <div class="field-room">
+                <div class="room-price">
+                    {{post.price}} $
+                    <span class="room-price-info">
+                        <p>Цена указана за сутки</p>
+                    </span>
+                </div>
+                <div class="course-info">
+
+                    <button
+                            [routerLink]="['/reserve']"
+                            class="btn btn-dark fas fa-chevron-right"
+                            (click)="addRoom(post)"
+                    >Бронировать</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+
+
+
+
+<ng-template #loading>
+
+    <div id="preloader">
+        <div id="loader"></div>
+        <p>Загрузка...</p>
+    </div>
+
+</ng-template>

@@ -1,0 +1,89 @@
+<div class="container">
+<div class="courses-container">
+    <div class="course">
+        <div class="course-preview">
+            <h6>{{post.title}}</h6>
+            <h3><quill-view-html [content]="post.text"></quill-view-html></h3>
+            <div class="price-room">
+            <span>{{post.price}}$</span>
+            </div>
+
+        </div>
+        <div class="course-info">
+
+            <quill-view-html [content]="post.photo"></quill-view-html>
+
+            <button
+            [routerLink]="['/room', post.id]"
+            class="btn btn-room btn-dark fas fa-chevron-right"
+            >Открыть</button>
+        </div>
+    </div>
+</div>
+
+
+</div>
+
+
+<!--<div class="container">-->
+    <!--<div class="room-card">-->
+
+        <!--<div class="room-img">-->
+            <!--<quill-view-html [content]="post.photo"></quill-view-html>-->
+        <!--</div>-->
+
+        <!--<div class="room-content">-->
+            <!--<h3>{{post.title}}</h3>-->
+            <!--<p><quill-view-html [content]="post.text"></quill-view-html></p>-->
+            <!--<p>{{post.price}}</p>-->
+            <!--<button-->
+                <!--[routerLink]="['/room', post.id]"-->
+                <!--class="btn btn-dark"-->
+                <!--Открыть> </button>-->
+          <!--</div>-->
+
+      <!--</div>-->
+   <!--</div>-->
+
+
+
+
+
+
+
+  <!--<div class="container">-->
+  <!--<div class="room-card">-->
+    <!--<div class="wrap mcb-wrap mcb-wrap-b26rorh0d one valign-top clearfix">-->
+      <!--<div class="mcb-wrap-inner">-->
+
+        <!--<div class="column mcb-column two-third column_column">-->
+
+
+            <!--<quill-view-html [content]="post.photo"></quill-view-html>-->
+
+
+        <!--</div>-->
+        <!--<div class="column mcb-column mcb-item-n4ht22fih one-third column_column">-->
+          <!--<div class="column_attr clearfix align_center" style="background-color:#66c3d0;padding:34px 12% 57px;">-->
+            <!--<h4 style="color: #fff;">{{post.title}}</h4>-->
+            <!--<hr class="no_line" style="margin:0 auto 10px">-->
+            <!--<p style="color: #fff;">-->
+              <!--Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi maximus.-->
+            <!--</p>-->
+            <!--<h5 style="color: #fff;">${{post.price}}/night</h5>-->
+            <!--<hr class="no_line" style="margin:0 auto 15px">-->
+            <!--<button-->
+              <!--[routerLink]="['/room', post.id]"-->
+              <!--class="btn btn-dark"-->
+              <!--&gt;Открыть</button>-->
+                    <!--</div>-->
+                  <!--</div>-->
+                <!--</div>-->
+              <!--</div>-->
+              <!--&lt;!&ndash;<button&ndash;&gt;-->
+      <!--&lt;!&ndash;[routerLink]="['/room', 12311]"&ndash;&gt;-->
+      <!--&lt;!&ndash;class="btn btn-dark"&ndash;&gt;-->
+    <!--&lt;!&ndash;&gt;Открыть</button>&ndash;&gt;-->
+  <!--</div>-->
+
+<!--</div>-->

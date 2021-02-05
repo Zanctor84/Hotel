@@ -1,0 +1,47 @@
+#Top_bar .logo img {
+  width: 123px;
+  min-height: 185px;
+}
+
+//li.active span{
+//  color: #00a2b9;
+//}
+
+#Header_creative {
+  background-color: #e6ddd7;
+}
+
+#Footer .custom-html-widget svg {
+  width: 32px;
+  height: 32px;
+  padding-right: 10px;
+}
+
+#Footer .custom-html-widget svg:hover {
+  fill: #00a2b9;
+}
+#Footer .custom-html-widget a:hover {
+  color: #00a2b9;
+}
+
+.active {
+  color: #00a2b9;
+}
+.main-menu {
+  width: 100%;
+  text-align: right;
+}
+
+.router-margin {
+  padding-top: 50px;
+}
+.main-menu .jumbolink {
+  position: relative;
+  top: 5px;
+  margin-left: 15px;
+}
+.menu-text-right .jumbolink {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}

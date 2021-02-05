@@ -1,0 +1,10 @@
+table tr td:last-child {
+  display: flex;
+  justify-content: space-evenly;;
+}
+table tr td a {
+  color: red;
+}
+table tr td a:hover {
+  cursor: pointer;
+}

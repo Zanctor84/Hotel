@@ -1,0 +1,24 @@
+<div class="search_room">
+    <input type="text" placeholder="Найти комнату..." [(ngModel)]="searchStr">
+</div>
+<div
+        *ngIf="posts$ | async as posts; else loading"
+        class="posts"
+>
+
+    <app-room
+            *ngFor="let post of posts | searchHotel:searchStr"
+            [post]="post"
+    ></app-room>
+
+</div>
+
+
+<ng-template #loading>
+
+    <div id="preloader">
+        <div id="loader"></div>
+        <p>Загрузка...</p>
+    </div>
+
+</ng-template>
